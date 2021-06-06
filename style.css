@@ -1,0 +1,95 @@
+@import url('https://fonts.googleapis.com/css2?family=Yeon+Sung&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html{
+    font-family: 'Yeon Sung', cursive;
+}
+
+.main{
+    height: 100vh;
+    width: 100vw;
+    display: grid;
+    place-items: center;
+    
+}
+
+.music-container{
+    height: 380px;
+    width: 286px;
+    border: 2px solid black;
+    background-color: #b9b55a;
+    text-align: center;
+    
+}
+
+.music-container #songName{
+    font-size: 20px;
+    text-transform: uppercase;
+    word-spacing: 0.15rem;
+    letter-spacing: .15rem;
+    margin-top: 2%;
+}
+.music-containe r#artistName{
+    font-size: 24px;
+    text-transform: capitalize;
+    margin-top: 2%;
+}
+
+.img-container{
+   
+    margin: auto;
+    height: 189px;
+    width: 180px;
+    margin-top: 4%;
+    border-radius: 50%;
+    margin-bottom: 3%;
+}
+
+img{
+    height: 100%;
+    width: 100%;
+    border-radius: 50%;
+    box-shadow: 0 0px 17px 1px #7b63a8;
+
+}
+
+.control-button{
+    box-shadow: 0 0px 10px -1px #401f7c;
+    border-radius: 45px;
+    background-color: white;
+    margin: auto;
+    width: 10rem;
+    align-items: center;
+    justify-content: space-between;
+    padding: 4px;
+    display: flex;
+}
+
+.rotateAnime{
+    animation: rotatePic 3s linear infinite;
+}
+
+@keyframes rotatePic{
+    from {transform: rotate(0deg);}
+        to {transform: rotate(360deg);}
+}
+
+.control-button fas:hover{
+    color: grey;
+    cursor: pointer;
+}
+
+.playBtn{
+    
+    border-radius: 50%;
+    font-size: 0.7rem;
+    color: black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
